@@ -32,6 +32,7 @@ function SkillsTab({ skills, isScrolled }) {
           isScrolled={isScrolled}
         />
       </Col>
+      
     </>
   );
 }

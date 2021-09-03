@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-function Skills({ heading, hardSkills, softSkills }) {
+function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploitation, gestionProjet, savoirEtre }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -20,33 +20,78 @@ function Skills({ heading, hardSkills, softSkills }) {
   );
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
-      <Container className="p-5 ">
+      <Container className="p-6 ">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
         </h2>
+        
+
         <Tabs
           className="skills-tabs"
-          defaultActiveKey="hard-skills"
+          defaultActiveKey="Technologies-skills"
           id="skills-tabs"
         >
           <Tab
             tabClassName="skills-tab lead"
-            eventKey="hard-skills"
-            title="Technical Skills"
+            eventKey="Technologies-skills"
+            title="Technologies Web"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
+              <SkillsTab skills={technologiesWeb} isScrolled={isScrolled} />
+            </Row>
+          </Tab>
+
+
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="bdd-skills"
+            title="Base de Données"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={bdd} isScrolled={isScrolled} />
             </Row>
           </Tab>
           <Tab
             tabClassName="skills-tab lead"
-            eventKey="soft-skills"
-            title="Soft Skills"
+            eventKey="Programmation-skill"
+            title="Programmation"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={softSkills} isScrolled={isScrolled} />
+              <SkillsTab skills={programmation} isScrolled={isScrolled} />
             </Row>
           </Tab>
+
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="Systèmes-skills"
+            title="Systèmes d'exploitations"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={systemesExploitation} isScrolled={isScrolled} />
+            </Row>
+          </Tab>
+
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="Gestion-skill"
+            title="Gestion de Projet"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={gestionProjet} isScrolled={isScrolled} />
+            </Row>
+          </Tab>
+
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="Savoir-skills"
+            title="Savoir être"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={savoirEtre} isScrolled={isScrolled} />
+            </Row>
+          </Tab>     
+
+
         </Tabs>
       </Container>
     </Jumbotron>

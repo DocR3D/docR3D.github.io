@@ -8,16 +8,20 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  parcours
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
+import ProjectLine from "./components/home/ProjectLine";
+import ProjectLineCard from "./components/home/ProjectLineCard";
+
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
-// import { Blog } from "./components/blog/Blog";
-// import BlogPost from "./components/blog/BlogPost";
+import { Blog } from "./components/blog/Blog";
+import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
@@ -26,6 +30,8 @@ import Experience from "./components/home/Experience";
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
+        
+
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
@@ -47,6 +53,13 @@ const Home = React.forwardRef((props, ref) => {
           <Experience experiences={experiences}/>
         )
       }
+
+      {
+      <ProjectLine 
+      heading={parcours.heading}
+      parcours={parcours}/>
+      }
+
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -66,8 +79,12 @@ const Home = React.forwardRef((props, ref) => {
       {skills.show && (
         <Skills
           heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
+          technologiesWeb={skills.technologiesWeb}
+          bdd={skills.bdd}
+          programmation={skills.programmation}
+          systemesExploitation={skills.systemesExploitation}
+          gestionProjet={skills.gestionProjet}
+          savoirEtre={skills.savoirEtre}
         />
       )}
       

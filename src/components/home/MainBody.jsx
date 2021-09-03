@@ -37,16 +37,29 @@ const MainBody = React.forwardRef(
               </a>
             ))}
           </div>
+          <div>
           <a
             className="btn btn-outline-light btn-lg "
             href="#aboutme"
             role="button"
             aria-label="Learn more about me"
           >
-            More about me
+            Plus d'information à mon propos
           </a>
+</div>
+<div className="p-5">
+          <a
+            className="btn btn-outline-light btn-lg "
+            role="button"
+            aria-label="Learn more about me"
+            href={`mailto:"yonnet.maxime@gglan.fr"`} 
+          >
+            Contactez-moi
+          </a>
+</div>
         </Container>
       </Jumbotron>
+
     );
   }
 );

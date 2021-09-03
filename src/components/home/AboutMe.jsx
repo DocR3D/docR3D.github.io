@@ -32,7 +32,9 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   };
 
   return (
+
     <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
+    
       <div className="container container-fluid">
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
@@ -40,7 +42,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               <img
                 className="border border-secondary rounded-circle"
                 src={profilePicUrl}
-                alt="profilepicture"
+                alt="Maxime Yonnet profile picture"
                 width={imgSize}
                 height={imgSize}
               />
@@ -60,7 +62,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                   role="button"
                   aria-label="Resume/CV"
                 >
-                  Resume
+                  Mon CV
                 </a>
               </p>
             )}
