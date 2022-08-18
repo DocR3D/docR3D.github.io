@@ -32,7 +32,7 @@ const about = {
   imageLink: require("../editable-stuff/maxime.jpg"),
   imageSize: 375,
   message:
-    "Je m'appelle Maxime Yonnet, Etudiant en informatique, Je suis actuellement en Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes).",
+    "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -95,10 +95,11 @@ const skills = {
     programmation: [
     { name: "Java", value: 100 },
     { name: "C", value: 75 },
+    { name: "C#", value: 75 },
     { name: "Python", value: 70 },
     { name: "Bash", value: 70 },
-    { name: "Golang", value: 70 },
-    { name: "Q#", value: 60 },
+    { name: "Golang", value: 60 },
+    { name: "Q#", value: 40 },
     { name: "XML", value: 65 },
     { name: "Socket", value: 70 },
   ],
@@ -127,7 +128,7 @@ const parcours = {
     name: "Master Informatique",
     location: "Brest, France", 
     desc:"Master informatique en SIIA, à l'ubo de brest" , 
-    position: "left" , date:" 2020 - Maintenant" , 
+    position: "left" , date:" 2020 - 2022" , 
     href: "https://www.google.fr"
   },
       {
@@ -209,16 +210,23 @@ const getInTouch = {
   show: true,
   heading: "Le mot de la fin",
   message:
-    "Je suis à la recherche d'une opportunité de stage en informartique dans le domaine du machine learning, intelligence artificielle, ou de data sciences en général. Vous pouvez me contacter ici",
+    "Je suis à la recherche d'un emploi en informatique dans le domaine du machine learning, intelligence artificielle, ou de data sciences en général. Vous pouvez me contacter ici",
   email: "Yonnet.maxime@gglan.fr",
 };
 
 const experiences = {
   show: true,
-  heading: "Expérience",
+  heading: "Expériences",
   data: [
+      {
+      role: 'Stage en Création d\'experience VR',
+      companylogo: require('../assets/img/aktan.jpg'),
+      name: "Université de Bretagne Occidentale",
+      date: 'Janvier 2022 – Juillet 2022',
+      desc: 'TBD',
+    },
     {
-      role: 'TAL en informatique quantique',// Here Add Company Name
+      role: 'TAL en informatique quantique',
       companylogo: require('../assets/img/ubo.png'),
       name: "Université de bretagne Occidentale",
       date: 'Avril 2021 – Juin 2021',
@@ -235,7 +243,7 @@ const experiences = {
       role: 'Developpeur Web',
       companylogo: require('../assets/img/bourrasque.png'),
       name: "Bourrasque",
-      date: 'Janvier 2020 – Juillet 2020',
+      date: 'Janvier 2019 – Juillet 2019',
       desc: 'TBD',
     },
         {
