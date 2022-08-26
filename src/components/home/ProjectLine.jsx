@@ -7,8 +7,13 @@ import axios from "axios";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import { withTranslation, initReactI18next } from "react-i18next";
+import '../../i18n.js';
+import { useTranslation } from "react-i18next";
+
 const Project = ({ heading, username, length, specfic, parcours }) => {
   const bgStyle = { backgroundColor: "#e9ecef" };
+      const { t, i18n } = useTranslation();
 
   return (
     <div style={bgStyle} id="parcours">
@@ -30,7 +35,7 @@ const Project = ({ heading, username, length, specfic, parcours }) => {
               <p>
                 {data.desc}
               </p>
-              <a type="button" className="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer" href={data.href}> Plus d'informations </a>
+              <a type="button" className="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer" href={data.href}> {t("More.label")} </a>
             </VerticalTimelineElement>
               ))}
 </VerticalTimeline>

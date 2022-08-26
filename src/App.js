@@ -1,16 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import {
-  navBar,
-  mainBody,
-  about,
-  repos,
-  leadership,
-  skills,
-  getInTouch,
-  experiences,
-  parcours
-} from "./editable-stuff/config.js";
+import { withTranslation, initReactI18next } from "react-i18next";
+import './i18n.js';
+import { useTranslation } from "react-i18next";
+
+
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
@@ -26,43 +20,80 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
+import {
+    navBarFR,
+    mainBodyFR,
+    aboutFR,
+    reposFR,
+    leadershipFR,
+    skillsFR,
+    getInTouchFR,
+    experiencesFR,
+    parcoursFR
+  } from "./editable-stuff/configFR.js";
+
+  import {
+    navBarEN,
+    mainBodyEN,
+    aboutEN,
+    reposEN,
+    leadershipEN,
+    skillsEN,
+    getInTouchEN,
+    experiencesEN,
+    parcoursEN
+  } from "./editable-stuff/configEN.js";
+
+
+
+ 
 
 const Home = React.forwardRef((props, ref) => {
+  const { t, i18n } = useTranslation();
+  const navBar = i18n.language=="fr" ? navBarFR : navBarEN;
+  const mainBody = i18n.language=="fr" ? mainBodyFR : mainBodyEN;
+  const about =  i18n.language=="fr" ? aboutFR : aboutEN;
+  const repos =  i18n.language=="fr" ? reposFR : reposEN;
+  const leadership =  i18n.language=="fr" ? leadershipFR : leadershipEN;
+  const skills =  i18n.language=="fr" ? skillsFR : skillsEN;
+  const getInTouch =  i18n.language=="fr" ? getInTouchFR : getInTouchEN;
+  const experiences =  i18n.language=="fr" ? experiencesFR : experiencesEN;
+  const parcours =  i18n.language=="fr" ? parcoursFR : parcoursEN;
   return (
     <>
-        
 
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        message={t(mainBody.message)}
         icons={mainBody.icons}
         ref={ref}
       />
       {about.show && (
         <AboutMe
-          heading={about.heading}
-          message={about.message}
+          heading={t(about.heading)}
+          message={t(about.message)}
           link={about.imageLink}
           imgSize={about.imageSize}
-          resume={about.resume}
+          resume={t(about.resume)}
         />
       )}
       {
         experiences.show && (
           <Experience experiences={experiences}/>
+
         )
       }
 
       {
       <ProjectLine 
-      heading={parcours.heading}
+      heading={t(parcours.heading)}
       parcours={parcours}/>
       }
 
       {repos.show && (
         <Project
-          heading={repos.heading}
+          heading={t(repos.heading)}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
@@ -70,15 +101,15 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {leadership.show && (
         <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
+          heading={t(leadership.heading)}
+          message={t(leadership.message)}
           img={leadership.images}
           imageSize={leadership.imageSize}
         />
       )}
       {skills.show && (
         <Skills
-          heading={skills.heading}
+          heading={t(skills.heading)}
           technologiesWeb={skills.technologiesWeb}
           bdd={skills.bdd}
           programmation={skills.programmation}
@@ -93,6 +124,16 @@ const Home = React.forwardRef((props, ref) => {
 });
 
 const App = () => {
+      const { t, i18n } = useTranslation();
+  const navBar = i18n.language=="fr" ? navBarFR : navBarEN;
+  const mainBody = i18n.language=="fr" ? mainBodyFR : mainBodyEN;
+  const about =  i18n.language=="fr" ? aboutFR : aboutEN;
+  const repos =  i18n.language=="fr" ? reposFR : reposEN;
+  const leadership =  i18n.language=="fr" ? leadershipFR : leadershipEN;
+  const skills =  i18n.language=="fr" ? skillsFR : skillsEN;
+  const getInTouch =  i18n.language=="fr" ? getInTouchFR : getInTouchEN;
+  const experiences =  i18n.language=="fr" ? experiencesFR : experiencesEN;
+  const parcours =  i18n.language=="fr" ? parcoursFR : parcoursEN;
   const titleRef = React.useRef();
 
   return (
@@ -104,8 +145,8 @@ const App = () => {
       <Footer>
         {getInTouch.show && (
           <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
+            heading={t(getInTouch.heading)}
+            message={t(getInTouch.message)}
             email={getInTouch.email}
           />
         )}

@@ -1,5 +1,8 @@
 import React from "react";
 import Pdf from "../../editable-stuff/resume.pdf";
+import { withTranslation, initReactI18next } from "react-i18next";
+import '../../i18n.js';
+import { useTranslation } from "react-i18next";
 
 import axios from "axios";
 
@@ -8,6 +11,8 @@ const pictureLinkRegex = new RegExp(
 );
 
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
+    const { t, i18n } = useTranslation();
+
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
 
@@ -62,7 +67,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                   role="button"
                   aria-label="Resume/CV"
                 >
-                  Mon CV
+                  {t("MCV.label")}
                 </a>
               </p>
             )}

@@ -3,8 +3,14 @@ import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
+import { withTranslation, initReactI18next } from "react-i18next";
+import '../../i18n.js';
+import { useTranslation } from "react-i18next";
+
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
+      const { t, i18n } = useTranslation();
+
     return (
       <Jumbotron
         fluid
@@ -44,7 +50,7 @@ const MainBody = React.forwardRef(
             role="button"
             aria-label="Learn more about me"
           >
-            Plus d'information à mon propos
+            {t("More.label")}
           </a>
 </div>
 <div className="p-5">
@@ -54,7 +60,7 @@ const MainBody = React.forwardRef(
             aria-label="Learn more about me"
             href={`mailto:"yonnet.maxime@gglan.fr"`} 
           >
-            Contactez-moi
+            {t("Contact.label")}
           </a>
 </div>
         </Container>

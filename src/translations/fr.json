@@ -1,0 +1,24 @@
+{
+
+  "CV.label": "CV",
+  "MCV.label": "Mon CV",
+
+
+  "APropos.label": "A Propos",
+
+  "Experiences.label" : "Experiences",
+
+  "Parcours.label" : "Parcours",
+
+  "Competences.label": "Compétences",
+
+  "Moi.label" : "Patient et autonome, passionné de nouvelles technologies, toujours curieux d’apprendre.",
+
+  "DescMoi.label" : "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
+
+  "More.label" : "Plus d'information",
+
+  "Contact.label" : "Contactez-moi",
+
+  "Fermer.label" : "Fermer"
+}

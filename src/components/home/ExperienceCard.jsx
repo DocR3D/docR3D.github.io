@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-
+import { withTranslation, initReactI18next } from "react-i18next";
+import '../../i18n.js';
+import { useTranslation } from "react-i18next";
 import { 
     Col,
     Card,
@@ -11,6 +13,7 @@ const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+    const { t, i18n } = useTranslation();
 
     return ( 
         <Col lg="4">
@@ -40,7 +43,7 @@ const [show, setShow] = useState(false);
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Fermer
+            {t("Fermer.label")}
           </Button>
         </Modal.Footer>
       </Modal>

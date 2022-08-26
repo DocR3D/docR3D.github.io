@@ -6,6 +6,10 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
+import { withTranslation, initReactI18next } from "react-i18next";
+import '../../i18n.js';
+import { useTranslation } from "react-i18next";
+
 function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploitation, gestionProjet, savoirEtre }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -18,6 +22,8 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
     [],
     skillsTabRef
   );
+  const { t, i18n } = useTranslation();
+
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
       <Container className="p-6 ">
@@ -34,7 +40,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="Technologies-skills"
-            title="Technologies Web"
+            title={t("Web.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={technologiesWeb} isScrolled={isScrolled} />
@@ -45,7 +51,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="bdd-skills"
-            title="Base de Données"
+            title={t("BDD.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={bdd} isScrolled={isScrolled} />
@@ -54,7 +60,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="Programmation-skill"
-            title="Programmation"
+            title={t("Prog.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={programmation} isScrolled={isScrolled} />
@@ -64,7 +70,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="Systèmes-skills"
-            title="Systèmes d'exploitations"
+            title={t("OS.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={systemesExploitation} isScrolled={isScrolled} />
@@ -74,7 +80,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="Gestion-skill"
-            title="Gestion de Projet"
+            title={t("Project.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={gestionProjet} isScrolled={isScrolled} />
@@ -84,7 +90,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
           <Tab
             tabClassName="skills-tab lead"
             eventKey="Savoir-skills"
-            title="Savoir être"
+            title={t("SoftSkill.label")}
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={savoirEtre} isScrolled={isScrolled} />
