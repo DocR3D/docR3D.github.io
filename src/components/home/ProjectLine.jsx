@@ -30,7 +30,7 @@ const Project = ({ heading, username, length, specfic, parcours }) => {
               <p>
                 {data.desc}
               </p>
-              <a type="button" className="btn btn-primary mt-3" href={data.href}> check this out ! </a>
+              <a type="button" className="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer" href={data.href}> Plus d'informations </a>
             </VerticalTimelineElement>
               ))}
 </VerticalTimeline>

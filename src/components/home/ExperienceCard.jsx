@@ -26,6 +26,7 @@ const [show, setShow] = useState(false);
 
       <Modal
         show={show}
+        size="lg"
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
@@ -35,6 +36,7 @@ const [show, setShow] = useState(false);
         </Modal.Header>
         <Modal.Body>
           {data.desc}
+          {data.html}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

@@ -74,6 +74,14 @@ const Navigation = React.forwardRef((props, ref) => {
               A-propos
             </Nav.Link>
           )}
+          {about.show && (
+            <Nav.Link
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#Experiences"}
+            >
+              Experiences
+            </Nav.Link>
+          )}
           {parcours.show && (
             <Nav.Link
               className="nav-link lead"
