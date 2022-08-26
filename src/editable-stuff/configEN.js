@@ -195,7 +195,7 @@ const parcoursEN = {
     name: "Computer Science DUT (now called BUT)",
     location: "Laval, France", 
     desc:"Two year university degree in computer science" , 
-    position: "left" , date:" Septembre 2017 - June 2019" , 
+    position: "left" , date:" September 2017 - June 2019" , 
     href: "https://iut-laval.univ-lemans.fr/fr/nos-formations/nos-diplomes/bachelor-universitaire-de-technologie.html"
   },
   {
@@ -223,7 +223,7 @@ const parcoursEN = {
     name: "Participation in the Little Hackers",
     location: "Brest, France", 
     desc:"Participation in the first 3 years of the Little Hackers training" , 
-    position: "left" , date:" Septembre 2011 - June 2014" , 
+    position: "left" , date:" September 2011 - June 2014" , 
     href: "https://www.a-brest.net/article13204.html"
   },
   ],

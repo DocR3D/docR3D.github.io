@@ -20,5 +20,12 @@
 
   "Contact.label" : "Contactez-moi",
 
-  "Fermer.label" : "Fermer"
+  "Fermer.label" : "Fermer",
+
+  "BDD.label" : "Base de données",
+  "Web.label" : "Technologies du Web",
+  "Prog.label" : "Programmation",
+  "OS.label" : "Systèmes d'exploitation",
+  "Project.label" : "Gestion de projet",
+  "SoftSkill.label" : "Savoir être"
 }
