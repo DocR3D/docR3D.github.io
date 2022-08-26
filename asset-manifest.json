@@ -1,27 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b8ba34b.chunk.css",
-    "main.js": "/static/js/main.ec1273e9.chunk.js",
-    "main.js.map": "/static/js/main.ec1273e9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8d76bfa5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8d76bfa5.js.map",
-    "static/css/2.2aa38b9c.chunk.css": "/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.05ad65fe.chunk.js": "/static/js/2.05ad65fe.chunk.js",
-    "static/js/2.05ad65fe.chunk.js.map": "/static/js/2.05ad65fe.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.2aa38b9c.chunk.css.map": "/static/css/2.2aa38b9c.chunk.css.map",
-    "static/css/main.0b8ba34b.chunk.css.map": "/static/css/main.0b8ba34b.chunk.css.map",
-    "static/js/2.05ad65fe.chunk.js.LICENSE.txt": "/static/js/2.05ad65fe.chunk.js.LICENSE.txt",
-    "static/media/cerema.png": "/static/media/cerema.23ba44d1.png",
-    "static/media/gglan.png": "/static/media/gglan.3ce89bb3.png",
-    "static/media/maxime.jpg": "/static/media/maxime.f4df4535.jpg",
-    "static/media/resume.pdf": "/static/media/resume.5cdd743b.pdf"
+    "main.css": "/home/static/css/main.2a32f026.css",
+    "main.js": "/home/static/js/main.119a8299.js",
+    "static/media/resume.pdf": "/home/static/media/resume.5cdd743bf33538ce0c47.pdf",
+    "static/media/cerema.png": "/home/static/media/cerema.23ba44d1aa881026cd34.png",
+    "static/media/maxime.jpg": "/home/static/media/maxime.f4df4535bda863b80b30.jpg",
+    "static/media/gglan.png": "/home/static/media/gglan.3ce89bb3157b5b7d3417.png",
+    "index.html": "/home/index.html",
+    "main.2a32f026.css.map": "/home/static/css/main.2a32f026.css.map",
+    "main.119a8299.js.map": "/home/static/js/main.119a8299.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d76bfa5.js",
-    "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.05ad65fe.chunk.js",
-    "static/css/main.0b8ba34b.chunk.css",
-    "static/js/main.ec1273e9.chunk.js"
+    "static/css/main.2a32f026.css",
+    "static/js/main.119a8299.js"
   ]
 }
