@@ -21,6 +21,7 @@ import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 import {
+	
     navBarFR,
     mainBodyFR,
     aboutFR,
