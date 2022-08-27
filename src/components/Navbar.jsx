@@ -6,10 +6,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBodyFR, reposFR, aboutFR, skillsFR, parcoursFR } from "../editable-stuff/configFR.js";
 import { mainBodyEN, reposEN, aboutEN, skillsEN, parcoursEN } from "../editable-stuff/configEN.js";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
+
 
 import { withTranslation, initReactI18next, useTranslation } from "react-i18next";
 import '../i18n.js';
+  ReactGA.initialize("G-ZF7P8HQE8V");
+  ReactGA.send("pageview");
 const useAnalyticsEventTracker = (category="Blog category") => {
   const eventTracker = (action = "test action", label = "test label") => {
     ReactGA.event({category, action, label});

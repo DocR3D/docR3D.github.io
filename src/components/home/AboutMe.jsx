@@ -3,7 +3,7 @@ import Pdf from "../../editable-stuff/resume.pdf";
 import { withTranslation, initReactI18next } from "react-i18next";
 import '../../i18n.js';
 import { useTranslation } from "react-i18next";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 import axios from "axios";
 

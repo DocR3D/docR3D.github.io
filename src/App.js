@@ -45,10 +45,9 @@ import {
     parcoursEN
   } from "./editable-stuff/configEN.js";
 
-import ReactGA from 'react-ga';
-  const TRACKING_ID = "GT-5DDCQ9"; // OUR_TRACKING_ID
-  ReactGA.initialize(TRACKING_ID);
-
+import ReactGA from "react-ga4";
+  ReactGA.initialize("G-ZF7P8HQE8V");
+  ReactGA.send("pageview");
  const useAnalyticsEventTracker = (category="Blog category") => {
   const eventTracker = (action = "test action", label = "test label") => {
     ReactGA.event({category, action, label});
