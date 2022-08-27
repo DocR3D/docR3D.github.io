@@ -45,7 +45,7 @@ import {
   } from "./editable-stuff/configEN.js";
 
 import ReactGA from 'react-ga';
-  const TRACKING_ID = "G-72CWVXHRVQ"; // OUR_TRACKING_ID
+  const TRACKING_ID = "GT-5DDCQ9"; // OUR_TRACKING_ID
   ReactGA.initialize(TRACKING_ID);
 
  const useAnalyticsEventTracker = (category="Blog category") => {
