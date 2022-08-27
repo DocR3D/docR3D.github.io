@@ -6,13 +6,19 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBodyFR, reposFR, aboutFR, skillsFR, parcoursFR } from "../editable-stuff/configFR.js";
 import { mainBodyEN, reposEN, aboutEN, skillsEN, parcoursEN } from "../editable-stuff/configEN.js";
-
+import ReactGA from "react-ga";
 
 import { withTranslation, initReactI18next, useTranslation } from "react-i18next";
 import '../i18n.js';
-
+const useAnalyticsEventTracker = (category="Blog category") => {
+  const eventTracker = (action = "test action", label = "test label") => {
+    ReactGA.event({category, action, label});
+  }
+  return eventTracker;
+}
 const Navigation = React.forwardRef((props, ref) => {
     const { t, i18n } = useTranslation();
+      const gaEventTracker = useAnalyticsEventTracker('CV');
   const mainBody = i18n.language=="fr" ? mainBodyFR : mainBodyEN;
   const about =  i18n.language=="fr" ? aboutFR : aboutEN;
   const repos =  i18n.language=="fr" ? reposFR : reposEN;
@@ -44,6 +50,7 @@ const Navigation = React.forwardRef((props, ref) => {
   }, [navBottom, navbarDimensions, ref, scrollPosition]);
 
   return (
+
     <Navbar
       ref={navbarMenuRef}
       className={` fixed-top  ${
@@ -74,6 +81,7 @@ const Navigation = React.forwardRef((props, ref) => {
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
+            onClick={()=>gaEventTracker('CV')}
           >
             {t("CV.label")}
           </Nav.Link>

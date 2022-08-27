@@ -3,8 +3,16 @@ import Pdf from "../../editable-stuff/resume.pdf";
 import { withTranslation, initReactI18next } from "react-i18next";
 import '../../i18n.js';
 import { useTranslation } from "react-i18next";
+import ReactGA from "react-ga";
 
 import axios from "axios";
+
+const useAnalyticsEventTracker = (category="Blog category") => {
+  const eventTracker = (action = "test action", label = "test label") => {
+    ReactGA.event({category, action, label});
+  }
+  return eventTracker;
+}
 
 const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
@@ -12,7 +20,7 @@ const pictureLinkRegex = new RegExp(
 
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
     const { t, i18n } = useTranslation();
-
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
 
@@ -66,6 +74,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                   rel="noreferrer noopener"
                   role="button"
                   aria-label="Resume/CV"
+                  onClick={()=>gaEventTracker('CV')}
                 >
                   {t("MCV.label")}
                 </a>

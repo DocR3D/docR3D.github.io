@@ -44,9 +44,16 @@ import {
     parcoursEN
   } from "./editable-stuff/configEN.js";
 
+import ReactGA from 'react-ga';
+  const TRACKING_ID = "G-72CWVXHRVQ"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
 
-
- 
+ const useAnalyticsEventTracker = (category="Blog category") => {
+  const eventTracker = (action = "test action", label = "test label") => {
+    ReactGA.event({category, action, label});
+  }
+  return eventTracker;
+}
 
 const Home = React.forwardRef((props, ref) => {
   const { t, i18n } = useTranslation();
@@ -59,9 +66,10 @@ const Home = React.forwardRef((props, ref) => {
   const getInTouch =  i18n.language=="fr" ? getInTouchFR : getInTouchEN;
   const experiences =  i18n.language=="fr" ? experiencesFR : experiencesEN;
   const parcours =  i18n.language=="fr" ? parcoursFR : parcoursEN;
+    const gaEventTracker = useAnalyticsEventTracker('CV');
+
   return (
     <>
-
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
