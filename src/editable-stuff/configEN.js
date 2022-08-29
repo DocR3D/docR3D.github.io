@@ -255,7 +255,7 @@ const experiencesEN = {
       role: 'Research time in quantum computing',
       companylogo: require('../assets/img/ubo.png'),
       name: "University of Western Brittany",
-      date: 'Avril 2021 – June 2021',
+      date: 'April 2021 – June 2021',
       desc: "During this Laboratory Welcome Time, I discovered quantum computing, I could then summarize all my knowledge in a frennch report that you can find here :",
       html: <div><br/> <p><a href="/home/RapportQuantique.pdf"> Internship report</a></p></div>,
     },
@@ -280,7 +280,7 @@ const experiencesEN = {
       role: 'President of an association',
       companylogo: require('../assets/img/gglan.png'),
       name: 'GGLAN',
-      date: 'juillet 2017 – July 2020',
+      date: 'July 2017 – July 2020',
       desc: 'GoodGame-Lan is an association created by several of my friends and myself. Its goal is to facilitate the creation of video game tournaments in the city of Brest. To do so, we organize different tournaments at different school vacations. I was president the first 3 years of the association and I am now Treasurer.',
       html: <div><br/> <p><a href="https://GGLAN.fr"> Web Site </a> </p> <p><a href="https://www.facebook.com/GGLANBREST"> Page Facebook </a> </p> <p><a href="https://www.instagram.com/gglanbrest/?hl=fr"> Instagram </a> </p></div>,
 
