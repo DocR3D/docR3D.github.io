@@ -139,21 +139,21 @@ const parcoursEN = {
     location: "", 
     desc:"Creation of an artificial intelligence with the goal of getting from point A to point B while dodging obstacles. Done using fuzzy logic." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportLogiqueFloue.pdf"
+    href: "/RapportLogiqueFloue.pdf"
   },
   {
     name: "Creation of a deep search algorithm for the traveler problem",
     location: "", 
     desc:"Creation of an algorithm to find the shortest path through all the points. The algorithm uses the logic set up by the immune system." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportVoyageur.pdf"
+    href: "/RapportVoyageur2.pdf"
   },
   {
     name: "Creation of an algorithm for computing upper convex envelope",
     location: "", 
     desc:"Created an algorithm to find the smallest possible surface that contains the most points using parallel programming." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportUH.pdf"
+    href: "/RapportUH.pdf"
   },
 
     {
@@ -175,7 +175,7 @@ const parcoursEN = {
     location: "", 
     desc:"Creation of a power 4 game playable on a network using the C language, sockets and TKinter." , 
     position: "right" , date:" 2019" , 
-    href: "/home/RapportPuissance4.pdf"
+    href: "/RapportPuissance4.pdf"
   },
   {
     name: "Computer Science in Cegep",
@@ -203,7 +203,7 @@ const parcoursEN = {
     location: "", 
     desc:"Creation of a point and click quiz game in Java using agile methods" , 
     position: "right" , date:" 2018" , 
-    href: "/home/RapportQuizz.pdf"
+    href: "/RapportQuizz.pdf"
   },
   {
     name: "Creation of a website responding to a challenge",
@@ -248,7 +248,7 @@ const experiencesEN = {
       name: "University of Western Brittany",
       date: 'January 2022 – July 2022',
       desc: "During this training course, I discovered the different tools allowing to host a VR tool and I discovered the tool allowing to create a space on these tools. I summarized all my knowledge in a french report that you can find here : ",
-      html: <div><br/> <p><a href="/home/RapportExperienceVR.pdf"> Internship Report</a></p></div>,
+      html: <div><br/> <p><a href="/RapportExperienceVR.pdf"> Internship Report</a></p></div>,
 
     },
     {
@@ -257,7 +257,7 @@ const experiencesEN = {
       name: "University of Western Brittany",
       date: 'April 2021 – June 2021',
       desc: "During this Laboratory Welcome Time, I discovered quantum computing, I could then summarize all my knowledge in a frennch report that you can find here :",
-      html: <div><br/> <p><a href="/home/RapportQuantique.pdf"> Internship report</a></p></div>,
+      html: <div><br/> <p><a href="/RapportQuantique.pdf"> Internship report</a></p></div>,
     },
     {
       role: 'Remote Image Analysis Developer Internship',
@@ -274,7 +274,7 @@ const experiencesEN = {
       name: "Bourrasque",
       date: 'January 2019 – July 2019',
       desc: 'Creation of a calendar allowing practitioners to manage their schedule, go on vacation and clients to make appointments.',
-      html: <div><br/> <p><a href="/home/RapportBourrasque.pdf"> Internship report</a></p></div>,
+      html: <div><br/> <p><a href="/RapportBourrasque.pdf"> Internship report</a></p></div>,
     },
         {
       role: 'President of an association',

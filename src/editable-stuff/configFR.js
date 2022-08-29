@@ -139,21 +139,21 @@ const parcoursFR = {
     location: "", 
     desc:"Création d'une intélligence artificielle dans le but d'aller d'un point A à un point B en esquivant les obstacles. Fait en utilisant la logique floue." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportLogiqueFloue.pdf"
+    href: "/RapportLogiqueFloue.pdf"
   },
   {
     name: "Creation d'un algorithme de recherche en profondeur pour le problème du voyageur",
     location: "", 
     desc:"Création d'un algorithme permettant de trouver le chemin le plus cours en passant par tout les points. L'algorithme utilise la logique mise en place par le système immunitaire." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportVoyageur.pdf"
+    href: "/RapportVoyageur.pdf"
   },
   {
     name: "Creation d'un algorithme de calcul d'enveloppe convexe superieur",
     location: "", 
     desc:"Création d'un algorithme permettant de trouver la surface la plus petite possible qui contient le plus de points possible en utilisant la programmation parallele." , 
     position: "right" , date:" 2021" , 
-    href: "/home/RapportUH.pdf"
+    href: "/RapportUH.pdf"
   },
 
     {
@@ -175,7 +175,7 @@ const parcoursFR = {
     location: "", 
     desc:"Création d'un jeu puissance 4 jouable en réseau en utilisant le langue C, les sockets et TKinter." , 
     position: "right" , date:" 2019" , 
-    href: "/home/RapportPuissance4.pdf"
+    href: "/RapportPuissance4.pdf"
   },
   {
     name: "Cégèp d'informatique",
@@ -203,7 +203,7 @@ const parcoursFR = {
     location: "", 
     desc:"Création d'un Jeu quizz point and click en Java en utilisant les méthodes agiles" , 
     position: "right" , date:" 2018" , 
-    href: "/home/RapportQuizz.pdf"
+    href: "/RapportQuizz.pdf"
   },
   {
     name: "Creation d'un site web répondant à un défis",
@@ -248,7 +248,7 @@ const experiencesFR = {
       name: "Université de Bretagne Occidentale",
       date: 'Janvier 2022 – Juillet 2022',
       desc: "Lors de ce stage, j'ai découvert les différents outils permettant d'heberger un outil VR et j'ai découvert l'outil permettant de créer un espace sur ces outils. J'ai résumé tout mon savoir dans un rapport que vous pouvez retrouver ici : ",
-      html: <div><br/> <p><a href="/home/RapportExperienceVR.pdf"> Rapport de Stage</a></p></div>,
+      html: <div><br/> <p><a href="/RapportExperienceVR.pdf"> Rapport de Stage</a></p></div>,
 
     },
     {
@@ -257,7 +257,7 @@ const experiencesFR = {
       name: "Université de bretagne Occidentale",
       date: 'Avril 2021 – Juin 2021',
       desc: "Lors de ce Temps d'Accueil en Laboratoire, j'ai découvert l'informatique quantique, j'ai pu alors résumer tout mon savoir dans un rapport que vous pouvez retrouver ici :",
-      html: <div><br/> <p><a href="/home/RapportQuantique.pdf"> Rapport de TAL</a></p></div>,
+      html: <div><br/> <p><a href="/RapportQuantique.pdf"> Rapport de TAL</a></p></div>,
     },
     {
       role: 'Stage en télétravail dans le developpement de solution d\'analyse d\'image vidéo',
@@ -274,7 +274,7 @@ const experiencesFR = {
       name: "Bourrasque",
       date: 'Janvier 2019 – Juillet 2019',
       desc: 'Création d\'un calendrier permettant à des practiciens de gérer leur emploi du temps, partir en vacance et aux clients de prendre des rendez-vous.',
-      html: <div><br/> <p><a href="/home/RapportBourrasque.pdf"> Rapport de Stage</a></p></div>,
+      html: <div><br/> <p><a href="/RapportBourrasque.pdf"> Rapport de Stage</a></p></div>,
     },
         {
       role: 'Président d\'association',
