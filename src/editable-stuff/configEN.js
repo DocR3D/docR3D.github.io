@@ -35,7 +35,7 @@ const aboutEN = {
   heading: "APropos.label",
   imageLink: require("../editable-stuff/maxime.jpg"),
   imageSize: 375,
-  message: "My name is Maxime Yonnet, student in computer science, recently graduated from a Master at the University of Western Brittany in the SIIA course (Intelligent, Interactive and Autonomous Systems). I am looking for a job in programming",
+  message: "My name is Maxime Yonnet, student in computer science, recently graduated from a Master at the University of Western Brittany in the SIIA course (Intelligent, Interactive and Autonomous Systems). I am looking for a job remote in Data Science, software developpment. ",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -243,7 +243,7 @@ const experiencesEN = {
   heading: "Experiences.label",
   data: [
       {
-      role: 'Internship in VR experience creation',
+      role: 'Remote Internship in VR experience creation',
       companylogo: require('../assets/img/aktan.jpg'),
       name: "University of Western Brittany",
       date: 'January 2022 – July 2022',
@@ -252,7 +252,7 @@ const experiencesEN = {
 
     },
     {
-      role: 'Research time in quantum computing',
+      role: 'Remote Research time in Quantum Computing',
       companylogo: require('../assets/img/ubo.png'),
       name: "University of Western Brittany",
       date: 'April 2021 – June 2021',
@@ -260,7 +260,7 @@ const experiencesEN = {
       html: <div><br/> <p><a href="/home/RapportQuantique.pdf"> Internship report</a></p></div>,
     },
     {
-      role: 'Image Analysis Developer',
+      role: 'Remote Image Analysis Developer Internship',
       companylogo: require('../assets/img/cerema.png'),
       name: "Cerema",
       date: 'January 2020 – July 2020',
@@ -269,7 +269,7 @@ const experiencesEN = {
 
     },
     {
-      role: 'Web Developer',
+      role: 'Internship in Web Developer',
       companylogo: require('../assets/img/bourrasque.png'),
       name: "Bourrasque",
       date: 'January 2019 – July 2019',

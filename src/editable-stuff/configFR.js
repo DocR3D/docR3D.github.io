@@ -35,7 +35,7 @@ const aboutFR = {
   heading: "APropos.label",
   imageLink: require("../editable-stuff/maxime.jpg"),
   imageSize: 375,
-  message: "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
+  message: "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi en télétravail dans la Data Science ou le développement d'application.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -243,7 +243,7 @@ const experiencesFR = {
   heading: "Experiences.label",
   data: [
       {
-      role: 'Stage en création d\'experience VR',
+      role: 'Stage en télétravail dans le domaine de la création d\'experience VR',
       companylogo: require('../assets/img/aktan.jpg'),
       name: "Université de Bretagne Occidentale",
       date: 'Janvier 2022 – Juillet 2022',
@@ -252,7 +252,7 @@ const experiencesFR = {
 
     },
     {
-      role: 'TAL en informatique quantique',
+      role: 'TAL en télétravail dans le domaine de l\'informatique quantique',
       companylogo: require('../assets/img/ubo.png'),
       name: "Université de bretagne Occidentale",
       date: 'Avril 2021 – Juin 2021',
@@ -260,7 +260,7 @@ const experiencesFR = {
       html: <div><br/> <p><a href="/home/RapportQuantique.pdf"> Rapport de TAL</a></p></div>,
     },
     {
-      role: 'Développeur en analyse image',
+      role: 'Stage en télétravail dans le developpement de solution d\'analyse d\'image vidéo',
       companylogo: require('../assets/img/cerema.png'),
       name: "Cerema",
       date: 'Janvier 2020 – Juillet 2020',
@@ -269,7 +269,7 @@ const experiencesFR = {
 
     },
     {
-      role: 'Développeur Web',
+      role: 'Stage dans le développement Web',
       companylogo: require('../assets/img/bourrasque.png'),
       name: "Bourrasque",
       date: 'Janvier 2019 – Juillet 2019',
