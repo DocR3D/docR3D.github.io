@@ -135,6 +135,13 @@ const parcoursFR = {
     href: "https://www.univ-brest.fr/departement-informatique/menu/Master+Informatique/Parcours-SIIA"
   },
   {
+    name: "Utilisation du Machine Learning dans le but de detecter si une image contient une arme à feu",
+    location: "", 
+    desc:"Création d'un algorithme qui utilise le Machine Learning, OpenCV et Qibullet dans le but de détecter si une image contient une arme à feu." , 
+    position: "right" , date:" 2021" , 
+    href: "https://www.youtube.com/watch?v=Xh3N65NMmyk&feature=youtu.be"
+  },
+  {
     name: "Creation d'une intélligence artificielle",
     location: "", 
     desc:"Création d'une intélligence artificielle dans le but d'aller d'un point A à un point B en esquivant les obstacles. Fait en utilisant la logique floue." , 
