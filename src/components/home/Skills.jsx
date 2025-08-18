@@ -10,8 +10,15 @@ import { withTranslation, initReactI18next } from "react-i18next";
 import '../../i18n.js';
 import { useTranslation } from "react-i18next";
 
-function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploitation, gestionProjet, savoirEtre }) {
-  const skillsTabRef = React.useRef();
+function Skills({
+    heading,
+    machineLearning = [],
+    backendLogiciel = [],
+    systemesEmbarques = [],
+    systemesExploitation = [],
+    outilsGestion = [],
+    savoirEtre = [],
+}) {  const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
 
@@ -43,7 +50,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("Web.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={technologiesWeb} isScrolled={isScrolled} />
+                          <SkillsTab skills={machineLearning} isScrolled={isScrolled} />
             </Row>
           </Tab>
 
@@ -54,7 +61,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("BDD.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={bdd} isScrolled={isScrolled} />
+                          <SkillsTab skills={backendLogiciel} isScrolled={isScrolled} />
             </Row>
           </Tab>
           <Tab
@@ -63,7 +70,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("Prog.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={programmation} isScrolled={isScrolled} />
+                          <SkillsTab skills={systemesEmbarques} isScrolled={isScrolled} />
             </Row>
           </Tab>
 
@@ -73,7 +80,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("OS.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={systemesExploitation} isScrolled={isScrolled} />
+                          <SkillsTab skills={systemesExploitation} isScrolled={isScrolled} />
             </Row>
           </Tab>
 
@@ -83,7 +90,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("Project.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={gestionProjet} isScrolled={isScrolled} />
+                          <SkillsTab skills={outilsGestion} isScrolled={isScrolled} />
             </Row>
           </Tab>
 
@@ -93,7 +100,7 @@ function Skills({ heading, technologiesWeb, bdd, programmation, systemesExploita
             title={t("SoftSkill.label")}
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={savoirEtre} isScrolled={isScrolled} />
+                          <SkillsTab skills={savoirEtre} isScrolled={isScrolled} />
             </Row>
           </Tab>     
 

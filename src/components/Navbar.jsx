@@ -33,7 +33,8 @@ const Navigation = React.forwardRef((props, ref) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const navbarMenuRef = React.useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
-  const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
+    const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
+    const lang = (i18n.language || "fr").slice(0, 2);
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (!navbarDimensions) return;
@@ -61,8 +62,8 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${mainBody.firstName} />`}
+          <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
+              {`<${mainBody.lastName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -95,7 +96,15 @@ const Navigation = React.forwardRef((props, ref) => {
             >
               {t("APropos.label")}
             </Nav.Link>
-          )}
+                  )}
+                  {skills.show && (
+                      <Nav.Link
+                          className="nav-link lead"
+                          href={process.env.PUBLIC_URL + "/#skills"}
+                      >
+                          {t("Competences.label")}
+                      </Nav.Link>
+                  )}
           {about.show && (
             <Nav.Link
               className="nav-link lead"
@@ -103,7 +112,8 @@ const Navigation = React.forwardRef((props, ref) => {
             >
               {t("Experiences.label")}
             </Nav.Link>
-          )}
+                  )}
+
           {parcours.show && (
             <Nav.Link
               className="nav-link lead"
@@ -113,14 +123,33 @@ const Navigation = React.forwardRef((props, ref) => {
 
             </Nav.Link>
           )}
-          {skills.show && (
-            <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
-            >
-              {t("Competences.label")}
-            </Nav.Link>
-          )}
+          
+                  <Nav.Link
+                      className={`nav-link lead ${lang === "fr" ? "active" : ""}`}
+                      href="#"
+                      onClick={(e) => {
+                          e.preventDefault();
+                          i18n.changeLanguage("fr");
+                          localStorage.setItem("i18nextLng", "fr");
+                      }}
+                      aria-current={lang === "fr" ? "page" : undefined}
+                  >
+                      FR
+                  </Nav.Link>
+
+                  <Nav.Link
+                      className={`nav-link lead ${lang === "en" ? "active" : ""}`}
+                      href="#"
+                      onClick={(e) => {
+                          e.preventDefault();
+                          i18n.changeLanguage("en");
+                          localStorage.setItem("i18nextLng", "en");
+                      }}
+                      aria-current={lang === "en" ? "page" : undefined}
+                  >
+                      EN
+                  </Nav.Link>
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

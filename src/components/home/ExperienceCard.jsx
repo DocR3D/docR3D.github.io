@@ -18,7 +18,7 @@ const [show, setShow] = useState(false);
     return ( 
         <Col lg="4">
             <div className="pb-5 mt-5 text-center btn btn-light" onClick={handleShow}>
-                <img className=" bg-white mb-3" src={data.companylogo} alt={`Image de ${data.name}`}/>
+                <img className=" bg-white mb-3" src={data.companylogo} alt={`${data.name}`} loading="lazy" decoding="async" />
                 <p className="lead">
                     {data.role}
                     <br/>

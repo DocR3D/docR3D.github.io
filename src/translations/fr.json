@@ -1,31 +1,31 @@
 {
 
-  "CV.label": "CV",
-  "MCV.label": "Mon CV",
+    "CV.label": "CV",
+    "cvDev.label": "Mon CV de Dev",
+    "cvIa.label": "Mon CV d'IA",
 
+    "APropos.label": "À propos",
 
-  "APropos.label": "A Propos",
+    "Experiences.label": "Expériences",
 
-  "Experiences.label" : "Experiences",
+    "Parcours.label": "Parcours",
 
-  "Parcours.label" : "Parcours",
+    "Competences.label": "Compétences",
 
-  "Competences.label": "Compétences",
+    "Moi.label": "Patient et autonome, passionné de nouvelles technologies, toujours curieux d’apprendre.",
 
-  "Moi.label" : "Patient et autonome, passionné de nouvelles technologies, toujours curieux d’apprendre.",
+    "DescMoi.label": "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
 
-  "DescMoi.label" : "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
+    "More.label": "Plus d’informations",
 
-  "More.label" : "Plus d'information",
+    "Contact.label": "Contactez-moi",
 
-  "Contact.label" : "Contactez-moi",
+    "Fermer.label": "Fermer",
 
-  "Fermer.label" : "Fermer",
-
-  "BDD.label" : "Base de données",
-  "Web.label" : "Technologies du Web",
-  "Prog.label" : "Programmation",
-  "OS.label" : "Systèmes d'exploitation",
-  "Project.label" : "Gestion de projet",
-  "SoftSkill.label" : "Savoir être"
+    "BDD.label": "Machine Learning",
+    "Web.label": "Backend logiciel",
+    "Prog.label": "Systèmes embarqués",
+    "OS.label": "Systèmes d'exploitation",
+    "Project.label": "Outils / Gestion",
+    "SoftSkill.label": "Savoir-être"
 }

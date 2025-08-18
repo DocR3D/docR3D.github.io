@@ -1,32 +1,33 @@
 {
 
-  "CV.label": "CV",
+    "CV.label": "CV",
 
-  "MCV.label": "My resume",
+    "cvDev.label": "My Dev resume",
+    "cvIa.label": "My IA resume",
 
-  "APropos.label": "About me",
+    "APropos.label": "About me",
 
-  "Experiences.label" : "Experiences",
+    "Experiences.label": "Experiences",
 
-  "Parcours.label" : "Course",
+    "Parcours.label": "Education",
 
-  "Competences.label": "Skills",
+    "Competences.label": "Skills",
 
-  "Moi.label" : "Patient et autonome, passionné de nouvelles technologies, toujours curieux d’apprendre.",
+    "Moi.label": "Patient et autonome, passionné de nouvelles technologies, toujours curieux d’apprendre.",
 
-  "DescMoi.label" : "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
+    "DescMoi.label": "Je m'appelle Maxime Yonnet, Etudiant en informatique, récemment diplomé d'un Master à l'Université de Bretagne Occidentale dans le cursus SIIA (Systèmes Intelligents, Interactifs et Autonomes). Je suis à la recherche d'un emploi dans le développement",
 
-  "More.label" : "More Information",
+    "More.label": "More Information",
 
-  "Contact.label" : "Contact me",
+    "Contact.label": "Contact me",
 
-  "Fermer.label" : "Close",
+    "Fermer.label": "Close",
 
-  "BDD.label" : "Database",
-  "Web.label" : "Web technologies",
-  "Prog.label" : "Programming",
-  "OS.label" : "Operating systems",
-  "Project.label" : "Project management",
-  "SoftSkill.label" : "SoftSkill"
+    "BDD.label": "Machine Learning",
+    "Web.label": "Backend",
+    "Prog.label": "Embedded Systems",
+    "OS.label": "Operating systems",
+    "Project.label": "Tools / PM",
+    "SoftSkill.label": "Soft skills"
 
 }

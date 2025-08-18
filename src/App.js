@@ -83,9 +83,22 @@ const Home = React.forwardRef((props, ref) => {
           message={t(about.message)}
           link={about.imageLink}
           imgSize={about.imageSize}
-          resume={t(about.resume)}
-        />
-      )}
+          resumeDev={about.resumeDev}       
+          resumeIa={about.resumeIa}
+          resume={about.resume}
+         />
+          )}
+          {skills.show && (
+              <Skills
+                  heading={t(skills.heading)}
+                  machineLearning={skills.machineLearning}
+                  backendLogiciel={skills.backendLogiciel}
+                  systemesEmbarques={skills.systemesEmbarques}
+                  systemesExploitation={skills.systemesExploitation}
+                  outilsGestion={skills.outilsGestion}
+                  savoirEtre={skills.savoirEtre}
+              />
+          )}
       {
         experiences.show && (
           <Experience experiences={experiences}/>
@@ -115,17 +128,7 @@ const Home = React.forwardRef((props, ref) => {
           imageSize={leadership.imageSize}
         />
       )}
-      {skills.show && (
-        <Skills
-          heading={t(skills.heading)}
-          technologiesWeb={skills.technologiesWeb}
-          bdd={skills.bdd}
-          programmation={skills.programmation}
-          systemesExploitation={skills.systemesExploitation}
-          gestionProjet={skills.gestionProjet}
-          savoirEtre={skills.savoirEtre}
-        />
-      )}
+ 
       
     </>
   );
@@ -143,6 +146,8 @@ const App = () => {
   const experiences =  i18n.language=="fr" ? experiencesFR : experiencesEN;
   const parcours =  i18n.language=="fr" ? parcoursFR : parcoursEN;
   const titleRef = React.useRef();
+
+
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
