@@ -37,9 +37,8 @@ const aboutEN = {
   imageSize: 375,
   message: "Machine Learning & Software Engineer, MSc (UBO). 2 years fully remote (middleware & BSP - Groupe SEB). Currently seeking a role in ML/data or backend, available now.",
   resumeDev: require("../editable-stuff/cv_dev_fr.pdf"),
-  resumeIa: require("../editable-stuff/cv_ia_fr.pdf"),
+  resumeIa: require("../editable-stuff/cv_ia_en.pdf"),
   // fallback
-  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION
@@ -213,14 +212,6 @@ const experiencesEN = {
       date: "2023–2025, full remote",
       desc: "Maintained and enhanced the Touch product line (touchscreens). Developed a balance calibration system (BSP → Middleware → UI). Implemented automatic error reporting with logs and statistics. Collaborated with UI team, testers, and project manager on legacy code (Java 7). Ensured strict compliance with security, quality, and deadlines.",
       },
-    {
-      role: 'Remote Research time in Quantum Computing',
-      companylogo: require('../assets/img/ubo.png'),
-      name: "University of Western Brittany",
-      date: 'April 2021 – June 2021',
-      desc: "During this Laboratory Welcome Time, I discovered quantum computing, I could then summarize all my knowledge in a frennch report that you can find here :",
-      html: <div><br/> <p><a href="/RapportQuantique.pdf"> Internship report</a></p></div>,
-    },
     {
       role: 'Remote Image Analysis Developer Internship',
       companylogo: require('../assets/img/cerema.png'),

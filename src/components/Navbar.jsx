@@ -80,15 +80,6 @@ const Navigation = React.forwardRef((props, ref) => {
             >Projets
             </Nav.Link>
           )}
-          <Nav.Link
-            className="nav-link lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-            onClick={()=>gaEventTracker('CV')}
-          >
-            {t("CV.label")}
-          </Nav.Link>
           {about.show && (
             <Nav.Link
               className="nav-link lead"

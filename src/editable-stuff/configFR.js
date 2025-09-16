@@ -37,11 +37,9 @@ const aboutFR = {
   imageLink: require("../editable-stuff/maxime.jpg"),
   imageSize: 375,
   message: "Ingénieur en machine learning & développement logiciel, MSc (UBO). 2 ans en full remote (middleware & BSP - Groupe SEB). Actuellement en recherche d’un poste en ML/data ou backend, disponible immédiatement.",
-  resumeDev: require("../editable-stuff/cv_dev_fr.pdf"),
   resumeIa: require("../editable-stuff/cv_ia_fr.pdf"),
   // fallback
-  resume: require("../editable-stuff/resume.pdf"),
-};
+  };
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
@@ -216,14 +214,6 @@ const experiencesFR = {
         date: "2023–2025, full remote",
         desc: "Maintenance et évolution de la gamme Touch (écrans tactiles). Développement du système de calibration de balance (BSP → Middleware → UI). Mise en place d’un envoi automatique de rapports d’erreurs avec logs/statistiques. Collaboration avec UI, testeurs et chef de projet sur code legacy (Java 7). Respect strict des contraintes de sécurité, de qualité et de délais."
         },
-    {
-      role: 'TAL en télétravail dans le domaine de l\'informatique quantique',
-      companylogo: require('../assets/img/ubo.png'),
-      name: "Université de bretagne Occidentale",
-      date: 'Avril 2021 – Juin 2021',
-      desc: "Lors de ce Temps d'Accueil en Laboratoire, j'ai découvert l'informatique quantique, j'ai pu alors résumer tout mon savoir dans un rapport que vous pouvez retrouver ici :",
-      html: <div><br/> <p><a href="/RapportQuantique.pdf"> Rapport de TAL</a></p></div>,
-    },
     {
       role: 'Stage en télétravail dans le developpement de solution d\'analyse d\'image vidéo',
       companylogo: require('../assets/img/cerema.png'),

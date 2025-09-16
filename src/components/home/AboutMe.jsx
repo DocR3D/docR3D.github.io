@@ -1,5 +1,5 @@
 import React from "react";
-import Pdf from "../../editable-stuff/resume.pdf";
+import Pdf from "../../editable-stuff/cv_ia_fr.pdf";
 import { withTranslation, initReactI18next } from "react-i18next";
 import '../../i18n.js';
 import { useTranslation } from "react-i18next";
@@ -70,22 +70,8 @@ const AboutMe = ({ heading, message, link, imgSize, resume, resumeDev, resumeIa 
                         <h2 className="display-4 mb-5 text-center">{heading}</h2>
                         <p className="lead text-center">{message}</p>
 
-                        {(devHref || iaHref) && (
+                        {(iaHref) && (
                             <p className="lead text-center">
-                                {devHref && (
-                                    <a
-                                        className="btn btn-outline-dark btn-lg me-2 mx-4"
-                                        href={devHref}
-                                        target="_blank"
-                                        rel="noreferrer noopener"
-                                        role="button"
-                                        aria-label="CV Développement"
-                                        onClick={() => gaEventTracker("CV_DEV")}
-                                    >
-                                        {t("cvDev.label") || "CV Développement"}
-                                    </a>
-                                )}
-
                                 {iaHref && (
                                     <a
                                         className="btn btn-outline-secondary btn-lg"

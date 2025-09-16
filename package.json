@@ -12,7 +12,6 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
-    "gh-pages": "^2.2.0",
     "i18next": "^21.9.1",
     "i18next-browser-languagedetector": "^6.1.5",
     "i18next-xhr-backend": "^3.2.2",
@@ -61,6 +60,7 @@
   "devDependencies": {
     "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining": "^7.15.4",
     "@babel/plugin-proposal-class-static-block": "^7.15.4",
-    "boostrap": "^2.0.0"
+    "boostrap": "^2.0.0",
+    "gh-pages": "^6.3.0"
   }
 }
